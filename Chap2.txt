@@ -1,0 +1,12 @@
+-- Prelude is assumed to be imported
+-- E1:
+-- import Math(pi)
+-- circleArea :: Number -> Number
+-- circleArea r = r * r * pi
+--
+-- E2: To install purescript-globals
+-- bower install purescript-globals --save
+-- some functions in Globals are 
+-- nan :: Number 
+-- isNaN
+-- infinity etc

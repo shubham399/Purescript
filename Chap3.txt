@@ -1,0 +1,22 @@
+--E1:
+-- findEntry :: String -> String -> AddressBook -> Maybe Entry
+-- findEntry firstName lastName = head <<< filter filterEntry
+-- 	where
+-- 	filterEntry :: Entry -> Boolean
+-- 	filterEntry entry = entry.firstName == firstName && entry.lastName == lastName
+--
+-- E2:
+--findEntryByStreet addr = head <<< filter filterEntry
+--	where
+--	findEntryByStreet :: Entry -> Boolean
+--	filterEntry e = e.address.street == addr.street && e.address.city == addr.city && e.address.state == addr.state
+--
+-- E3:
+-- hasEntry firstName lastName = not <<< null <<< filter filterEntry
+--	  where
+--		filterEntry :: Entry -> Boolean
+--		filterEntry entry = entry.firstName == firstName && entry.lastName == lastName
+-- E4:
+-- removeDuplicates firstName lastName = nubBy isEqual
+-- 	where
+--		isEqual a b = a.firstName == b.firstName && a.lastName == b.lastName

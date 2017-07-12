@@ -1,0 +1,85 @@
+--E1: didn't understand the question
+--E2:
+--numEven arr =
+--	if null arr
+--	then 0
+--	else score(head arr) + numEven(tail arr)
+--
+-- score a = if a `mod` 2 == 0 then 1 else 0
+--
+--
+--E1:
+--
+-- sq n = n * n
+-- sqall arr = sq <$> arr
+-- 
+-- E2:
+-- 	isNonNegative n = n >= 0.0
+--	nonNegatives = filter isNonNegative
+--
+--
+--
+-- E1:
+--factors :: Int -> Array (Array Int)
+--factors n = do
+-- i <- 1 .. n
+-- j <- i .. n
+-- guard $ i * j == n
+-- return [i, j]
+--
+--isPrime :: Int -> Boolean
+--isPrime n = length (factors n) == 1
+--
+--E2:
+-- cartesian xa xb = do
+--	x <- xa
+--	y <- xb
+--	pure[x,y]
+--
+--
+--E3:
+--triples n = do
+-- a <- 1 .. (n - 1)
+-- b <- 1 .. (n - 1)
+-- c <- 1 .. (n - 1)
+-- pure [a, b, c]
+--
+-- guard $ (a * a) + (b * b) == c * c && a < b && b < c
+--
+--
+--
+--
+--
+--
+--
+--
+-- E1:
+--testtrue = foldl (&&) true [true,false,true]
+-- Output will be false
+--
+-- E2:
+-- foldl (==) false xs returns true
+-- xs will be an array with all value to be false
+--
+-- E3:
+-- count :: forall a. (a -> Boolean) -> Array a -> Int
+--  count _ [] = 0
+--  count p xs = if p (unsafePartial head xs)
+--  then count p (unsafePartial tail xs) + 1
+--  else count p (unsafePartial tail xs)
+-- Output
+-- count :: forall a. (a -> Boolean) -> Array a -> Int
+--  count [] =count'  0
+--   where
+-- count' acc _ [] = acc
+--   count' p xs acc =  if p (head xs)
+--    then count'(acc + 1) p (tail xs) + 1
+--    else count' acc p ( tail xs)
+--
+-- E4:
+-- reverse = foldl (\xs x -> [x] <> xs) []
+--
+--
+--
+-- E1:
+-- onlyFiles = filter (not <<< isDirectory) <<< allFiles
