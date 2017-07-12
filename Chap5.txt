@@ -1,0 +1,10 @@
+-- E1:
+--factorial 0  = 1
+--factorial n = n * factorial ( n - 1 )
+--
+--
+-- E2:
+-- binom :: Int -> Int -> Int
+-- binom n 0 = 1
+-- binom n k | k > n = 0
+--           | otherwise =  (binom  ( n - 1 ) ( k - 1 )  + binom  ( n - 1 ) k  )
