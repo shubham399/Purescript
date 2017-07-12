@@ -24,4 +24,31 @@
 --E3:
 --fromSingleton [a] =a 
 --fromSingleton _ = 0
+--
+--
+--
+--
+--
+-- E1:
+--exampleCircle :: Shape
+--exampleCircle = Circle p1 n
+--	where
+--	 p1 :: Point
+--	 p1 = Point { x: 0.0 , y: 0.0}
+--	 n :: Number
+--	 n = 10.0
+--
+--
+--E2:
+--scale (Circle c r) fac = (Circle c (r*fac)) 
+--scale (Rectangle c w h) fac = (Rectangle c (w*fac) (h*fac))
+--scale (Line start (Point {x,y})) fac = (Line start (Point {x:x1, y:y1}))
+--	where
+--		x1 = x*fac
+--		y1 = y*fac
+--scale (Text loc text) fac = (Text loc text)
+--
+--
+--
+--
 
