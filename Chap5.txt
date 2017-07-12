@@ -48,7 +48,9 @@
 --		y1 = y*fac
 --scale (Text loc text) fac = (Text loc text)
 --
---
---
+--E3:
+--getText s = case s of
+--	(Text loc text) -> Just text
+--	_ -> Nothing
 --
 
