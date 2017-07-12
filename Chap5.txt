@@ -8,3 +8,20 @@
 -- binom n 0 = 1
 -- binom n k | k > n = 0
 --           | otherwise =  (binom  ( n - 1 ) ( k - 1 )  + binom  ( n - 1 ) k  )
+--
+--
+--
+--
+--
+--E1:
+--sameCity {address: {city: x}} {address: {city: y}}
+--	| x == y = true
+--	| otherwise = false
+--
+--E2:
+--For sameCity it is city x, and city y
+-- For 
+--E3:
+--fromSingleton [a] =a 
+--fromSingleton _ = 0
+
