@@ -1,5 +1,5 @@
 -- E1:
---instace showPoint :: show Point where
+--instace showPoint :: Show Point where
 -- show (Point {x,y}) =  "(" <> show x <> ", " <> show y <> ")"
 --
 --instance showShape :: Show Shape where
