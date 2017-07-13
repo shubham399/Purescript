@@ -4,7 +4,7 @@
 --
 --instance showShape :: Show Shape where
 --show (Circle c r) = "Circle [center: " <> show c <> ", radius: " <> show r <> "]"
---show (Rectangle c w h) = "Rectangle [center: " <> showPoint c <> ", width: " <> show w <> ", height: " <> show h <> "]"
+--show (Rectangle c w h) = "Rectangle [center: " <> show c <> ", width: " <> show w <> ", height: " <> show h <> "]"
 --show (Line start end) = "Line [start: " <> show start <> ", end: " <> show end <> "]"
 --show (Text loc text) = "Text [location: " <> show loc <> ", text: " <> show text <> "]"
 --
