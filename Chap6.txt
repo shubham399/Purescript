@@ -9,3 +9,13 @@
 -- show (Text loc text) = "Text [location: " <> show loc <> ", text: " <> show text <> "]"
 --
 --
+-- E1:
+-- newtype Complex = Complex
+--		{ real : Number
+--		, imaginary : Number
+--		}
+--
+--
+--
+--instance showComplex :: Show Complex where
+--	show (Complex {real, imaginary}) = "real : " <> show real <> ", imaginary : " <> show imaginary
